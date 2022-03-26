@@ -1,0 +1,36 @@
+label{
+    padding: 10px;
+}
+h2{
+    color: white;
+    padding: 10px;
+}
+.recipecard-wrapper{
+    width: 100%;
+    padding: 10px;
+}
+.recipecard-container:hover{
+    transform: scale(1.03);
+}
+.recipecard-container{
+    height: 200px;
+    width: 220px;
+    transition: 300ms ease;
+}
+.recipecard-img{
+    width: 100%;
+    height:  150px;
+    border-radius: 10px;
+}
+.recipecard-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.recipecard-description{
+    padding: 5px;
+    width: 100%;
+    word-break: break-all;
+    color: white;
+    font-size: 12px;
+}

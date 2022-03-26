@@ -1,0 +1,10 @@
+.recipes-categories{
+        height: auto;
+}
+.categories-recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 20px ;
+     
+}

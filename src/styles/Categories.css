@@ -1,0 +1,13 @@
+.categories-header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.categories-icons{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categories-icons label{
+    font-size: 12px;
+}
