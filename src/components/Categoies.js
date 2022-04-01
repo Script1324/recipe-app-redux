@@ -67,10 +67,6 @@ function Categoies() {
             <SetMealIcon  style={iconStyle}/>
             <label>fish</label>
             </div>
-            <div className='categories-icons' onClick={getlabel}>
-            <SearchIcon  style={iconStyle}/>
-            <label>Search</label>
-            </div>
 
     </div>
   )

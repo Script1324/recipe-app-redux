@@ -14,6 +14,7 @@ const RecipeSlice = createSlice({
             state.recipeDetails = action.payload
         }
         
+        
 
     }
 })

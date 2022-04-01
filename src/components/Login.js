@@ -9,8 +9,13 @@ import logo from "../images/chef.png"
 import {createUserWithEmailAndPassword ,onAuthStateChanged, signInWithEmailAndPassword} from "firebase/auth"
 import {auth,db} from "../firebase/FirebaseConfig"
 import {setDoc,doc} from "firebase/firestore"
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
+
+    //notification
+    
 
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
@@ -21,13 +26,12 @@ function Login() {
     const Login_User = async(e) => {
         e.preventDefault();
         try{      
-        alert('loooading....')     
-        
+            
         const userData = await signInWithEmailAndPassword(auth,email,password)    
         await setDoc(doc(db,"users",userData.user.uid),{
             email:userData.user.email
         })
-        
+     
   
         dispatch(login({
             usersData:{
@@ -36,6 +40,7 @@ function Login() {
             },
             loggedStatus:true
         }))
+            toast.info("succesfully login")
 
         }catch(err){
             alert(err)

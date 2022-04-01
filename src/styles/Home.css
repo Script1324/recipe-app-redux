@@ -8,3 +8,8 @@
     padding-right: 20px ;
      
 }
+@media (max-width:640px) {
+    .recipes-categories{
+        padding-bottom: 70px;
+    }
+}

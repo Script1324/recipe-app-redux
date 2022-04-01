@@ -1,0 +1,19 @@
+.contact-container{
+    text-align: center;
+    color: white;
+}
+.contact-icons{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icons > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.contact-icons > div > p{
+    margin-left: 9px;
+}

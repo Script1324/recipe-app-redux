@@ -39,5 +39,7 @@ h2{
     position: absolute;
     right: 5px;
     top: 5px;
-
+    z-index: 5;
+    color: white;
+    background-color: transparent;
 }

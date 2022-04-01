@@ -5,7 +5,7 @@ import MenuOpenOutlinedIcon from '@mui/icons-material/MenuOpenOutlined';
 import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
 import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 
 function SideNav() {
@@ -37,7 +37,7 @@ function SideNav() {
 
                <Link to="/bookmark" style={{textDecoration:"none",color:"white"}}> <li><BookOutlinedIcon style={iconStyle}/> <span className={display ? "active":""}>  Bookmark</span> </li></Link>
                 <Link to="/about" style={{textDecoration:"none",color:"white"}}> <li><InfoOutlinedIcon style={iconStyle}/> <span className={display ? "active":""}>About</span></li> </Link>
-                <li style={{textDecoration:"none",color:"white"}}><SearchOutlinedIcon style={iconStyle}/><span className={display ? "active":""}>Search</span > </li>
+               <Link to="/contact"> <li style={{textDecoration:"none",color:"white"}}><LocalPhoneIcon style={iconStyle}/><span className={display ? "active":""}>Contact</span > </li> </Link>
                 
             </ul>
     </nav>

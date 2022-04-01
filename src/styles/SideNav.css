@@ -60,6 +60,7 @@ nav ul li{
         left: 0;
         border-radius: 0;
         height: 70px;
+        z-index: 20;
         border-top-right-radius: 35px;
         border-top-left-radius: 35px;
     }

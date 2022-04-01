@@ -63,6 +63,9 @@
     .recipe-information-details{
         width: 95%;
     }
+    .recipeinformation-description{
+        padding-bottom: 50px;
+    }
 }
 @media (max-width:550px) {
     .recipe-information-details{

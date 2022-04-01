@@ -8,6 +8,7 @@ import SideNav from './SideNav'
 import Header from './Header'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Information from './Information'
+import Contact from './Contact'
 
 function Profile() {
     const dispatch = useDispatch()
@@ -19,7 +20,7 @@ function Profile() {
   return (
     <div>
         <div className="profile-container">
-           
+            
            
              <SideNav/>            
              <div className='profile-content'>
@@ -31,7 +32,7 @@ function Profile() {
                    <Route path="/bookmark" element={<Bookmark/>}/>
                    <Route path="/about" element={<AboutUs/>}/>
                    <Route path='/information' element={<Information/>} />
-                  
+                   <Route path='/contact' element={<Contact/>}/>
 
                 </Routes>
               </div>

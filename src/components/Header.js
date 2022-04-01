@@ -5,6 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import {auth} from "../firebase/FirebaseConfig"
 import {signOut} from "firebase/auth"
 import {logout} from "../actions/user"
+import { useRef } from 'react';
+import {  toast } from 'react-toastify';
 
 function Header() {
 
@@ -20,16 +22,23 @@ function Header() {
     
     const LogOut = async() =>{
         await signOut(auth)
-        alert('succesfully log out')
+        toast("succesfully logout")
      
      }
+
+     const inputRef = useRef(null)
+
+     const focus = () =>{
+        inputRef.current.focus()
+     }
+
 
   return (
     
           <header>
                     <div className='profile-search'>
-                     <SearchIcon style={iconStyle}/>
-                     <input type="text" placeholder="search for new recipes"/>
+                     <SearchIcon style={iconStyle} onClick={focus}/>
+                     <input type="text" placeholder="search for new recipes" ref={inputRef}/>
 
                     </div>
                    

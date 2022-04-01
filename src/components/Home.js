@@ -50,7 +50,7 @@ function Home() {
             }}>
 
             {randomRecipes !== undefined ? randomRecipes.map((recipe)=>{
-                return <SplideSlide key={recipe.id}><Link to="/information" state={{state:recipe.id}}> <RecipeCard  data={recipe}/></Link></SplideSlide> 
+                return <SplideSlide key={recipe.id}><Link to="/information" state={{state:recipe.id}} style={{textDecoration:"none"}}>  <RecipeCard  data={recipe}/></Link></SplideSlide> 
             }): "llloading data"}
 
               </Splide>
@@ -62,7 +62,7 @@ function Home() {
                   
                   <div className='categories-recipes'>
                       {recipes.length !== 0 ? recipes.map((recipe)=>{
-                          return <Link to="/information" state={{state:recipe}} key={recipe.id}><RecipeCard  data={recipe}/>  </Link>
+                          return <Link to="/information" state={{state:recipe}} key={recipe.id} style={{textDecoration:"none"}}><RecipeCard  data={recipe}/>  </Link>
                       }) : <h2>Search Your Desired Recipe Here..</h2>  }
                   </div>  
 
